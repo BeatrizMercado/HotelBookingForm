@@ -1,12 +1,12 @@
 {
   "bookings": [
     {
-      "id": "2b61",
-      "name": "Beatriz",
-      "phone": "5768945",
-      "checkin": "2024-01-10",
-      "checkout": "2024-02-09",
-      "guests": "3"
+      "id": "5feb",
+      "name": "Bea",
+      "phone": "622302970",
+      "checkin": "2024-01-31",
+      "checkout": "2024-02-03",
+      "guests": "2"
     }
   ]
 }

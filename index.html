@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles.css">
     <title>Hotel Booking Form</title>
 </head>
 <body>
-    <h1>Book your Room Now</h1>
-    <section>
-        <form id="booking-form">
-            <label for="new-name">Name</label><input type="text" id="new-name">
-            <label for="new-phone">Phone</label><input type="tel" id="new-phone">
-            <label for="check-in">Check-In date</label><input type="date" id="check-in">
-            <label for="check-out">Check-Out date</label><input type="date" id="check-out">
-            <label for="number-of-guests">Nº Guests</label><input type="number" id="number-of-guests">
-            <button type="submit" onclick="addBooking()">Book Now</button>
+    <h1>Room Booking Form</h1>
+    <section class="form">
+        <form id="booking-form" class="form-fields">
+            <label for="new-name">Name</label><input type="text" id="new-name" class="field">
+            <label for="new-phone">Phone</label><input type="tel" id="new-phone" class="field">
+            <label for="check-in">Check-In date</label><input type="date" id="check-in" class="field">
+            <label for="check-out">Check-Out date</label><input type="date" id="check-out" class="field">
+            <label for="number-of-guests">Nº Guests</label><input type="number" id="number-of-guests" class="field">
+            <button type="submit" class="button-booking" onclick="addBooking()">Book Now</button>
         </form>
     </section>
-    <section>
+    <section class="booking-list">
         <h2>Booking List</h2>
-        <button onclick="printBookings()">View Bookings</button>
+        <button class="button-list" onclick="printBookings()">View Bookings</button>
 
         <ul id="booking-list">
         </ul>
