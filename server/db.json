@@ -3,8 +3,9 @@
       {
         "name": "Beatriz",
         "phone": "622 30 29 70",
-        "checkin": "Apr 1, 2024",
+        "check-in": "Apr 1, 2024",
         "checkout": "Apr 9, 2024",
+        "number-of-guests": 2,
         "id": "1"
       }
     ]
