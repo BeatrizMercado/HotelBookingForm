@@ -1,0 +1,11 @@
+{
+    "bookings": [
+      {
+        "name": "Beatriz",
+        "phone": "622 30 29 70",
+        "checkin": "Apr 1, 2024",
+        "checkout": "Apr 9, 2024",
+        "id": "1"
+      }
+    ]
+}
