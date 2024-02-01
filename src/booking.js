@@ -4,12 +4,15 @@ async function getBookings() {
     const result = await fetch("http://localhost:3000/bookings")
     // Esperar a que la respuesta de la solicitud sea recibida y convertirla en formato JSON
     const data = await result.json()
-    // Esperar a que la respuesta de la solicitud sea recibida y convertirla en formato JSON
+    // Devolver los datos obtenidos
     return data
 }
 
+// Obtenemos la etiqueta de la sección donde se mostrarán las reservas
 let sectionTag = document.getElementById("booking-list")
+// Función asíncrona para imprimir las reservas en la página
 async function printBookings() {
+    // Obtenemos las reservas mediante el método getBookings
     let bookings = await getBookings()
     bookings.map(booking => {
         sectionTag.innerHTML +=
@@ -22,8 +25,9 @@ async function printBookings() {
     })
 }
 
-//Método DELETE 
+//Método DELETE para cancelar una reserva
 async function cancelBooking(id){
+    // Realizamos una solicitud DELETE al servidor para cancelar la reserva con el ID proporcionado
     const result = await fetch(`http://localhost:3000/bookings/${id}`,
     {
         method: "DELETE"
@@ -31,11 +35,12 @@ async function cancelBooking(id){
     return result
 }
 
-//Método POST 
+//Método POST para agregar una reserva
 async function postBooking() {
+    // Crear una reserva vacía
     const newBooking = {
     }
-
+    // Configuramos las opciones para la solicitud POST
     const options = {
         method: 'POST',
         headers: {
@@ -50,7 +55,7 @@ async function postBooking() {
 
 //Método POST 
 async function addBooking() {
-    const formBooking = document.getElementById("booking-form")
+    const formBooking = document.getElementById("booking-form");
 
     const newBooking = {
         "name": formBooking.elements[0].value,
@@ -67,3 +72,6 @@ async function addBooking() {
         body: JSON.stringify(newBooking),
     } )
 }
+
+// Método PUT para actualizar una reserva
+

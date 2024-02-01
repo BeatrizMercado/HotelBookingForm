@@ -3,10 +3,26 @@
     {
       "id": "5feb",
       "name": "Bea",
-      "phone": "622302970",
+      "phone": "622 30 29 70",
       "checkin": "2024-01-31",
       "checkout": "2024-02-03",
       "guests": "2"
+    },
+    {
+      "id": "34cf",
+      "name": "Juan",
+      "phone": "679 12 53 66",
+      "checkin": "2024-02-09",
+      "checkout": "2024-02-11",
+      "guests": "2"
+    },
+    {
+      "id": "18aa",
+      "name": "Sofía Herranz",
+      "phone": "630 58 99 00",
+      "checkin": "2024-03-21",
+      "checkout": "2024-03-27",
+      "guests": "3"
     }
   ]
 }
